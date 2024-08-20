@@ -1,0 +1,15 @@
+<div class="nav-container"{{#if page.component}} data-component="{{page.component.name}}" data-version="{{page.version}}"{{/if}}>
+  <aside class="nav">
+    {{> nav-explore}}
+    <div class="panels">
+{{> nav-menu}}
+    </div>
+  </aside>
+</div>
+<div id="hide-nav">
+  <button>
+    <span>
+      ᐸ
+    </span>
+  </button>
+</div>

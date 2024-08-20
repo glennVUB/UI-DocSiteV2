@@ -1,0 +1,30 @@
+.DocSearch-Container {
+  z-index: 10000 !important;
+  position: fixed !important;
+}
+
+.DocSearch-Button-Keys {
+  display: none;
+}
+
+.DocSearch-Button-Container {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.DocSearch-Button {
+  background: var(--neutral-lighter);
+  border-radius: 5px;
+  border: 1px solid var(--neutral-light);
+  margin: 0;
+}
+
+.DocSearch-Button .DocSearch-Search-Icon {
+  color: var(--accent);
+}
+
+.DocSearch-Button .DocSearch-Button-Placeholder {
+  font-weight: 400;
+}

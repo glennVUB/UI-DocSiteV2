@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+{{> head-prelude}}
+    <title>VUBnet Documentation</title>
+    {{#with page.canonicalUrl}}
+    <link rel="canonical" href="{{this}}">
+    {{/with}}
+{{> head-styles}}
+{{> head-meta}}
+{{> head-scripts}}
+{{> head-icons}}
+  </head>
+  <body>
+{{> header}}
+{{> body-home}}
+{{> footer}}
+  </body>
+</html>

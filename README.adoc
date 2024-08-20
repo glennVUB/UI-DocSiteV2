@@ -1,0 +1,49 @@
+= Hazelcast Documentation UI
+// Settings:
+:experimental:
+:hide-uri-scheme:
+// Project URLs:
+:url-docs: https://docs.hazelcast.com
+:url-docs-playbook: https://github.com/hazelcast/hazelcast-docs
+:url-contributing: .github/CONTRIBUTING.adoc
+:url-antora: https://antora.org
+:url-hazelcast: https://hazelcast.com
+:toc: preamble
+
+
+image:https://img.shields.io/github/v/release/JakeSCahill/hazelcast-docs-ui?label=Release[Release version]
+
+This repository hosts the UI project for the {url-docs-playbook}[documentation playbook].
+
+TIP: You can see the UI in action on the {url-docs}[documentation site].
+
+== GitHub Actions
+
+To automate some elements of the build process, this repository includes the following GitHub Actions:
+
+.GitHub Actions
+[cols="m,a,a"]
+|===
+|File |Description |Triggers
+
+|bundle.yml
+|link:{url-contributing}#package[Packages the UI] into a `ui-bundle.zip` file and commits it to the `master` branch
+|On a push to the `master` branch of this repository
+
+|===
+
+== Contributing
+
+To learn how to develop the UI and preview it locally, see our link:{url-contributing}[contributing guide].
+
+== Copyright and License
+
+=== Software
+
+The software in this repository (build scripts, JavaScript files, Handlebars templates, foundation CSS, utility icons, etc) is part of the {url-antora}[Antora project].
+As such, use of the software is granted under the terms of the https://www.mozilla.org/en-US/MPL/2.0/[Mozilla Public License Version 2.0] (MPL-2.0).
+
+=== Branding and Design
+
+Copyright (C) {url-hazelcast}[Hazelcast] 2022.
+All rights reserved.

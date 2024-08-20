@@ -1,0 +1,22 @@
+.nav-toggle {
+  background: url(../img/menu.svg) no-repeat 50% 47.5%;
+  background-size: 49%;
+  border: none;
+  outline: none;
+  line-height: inherit;
+  height: 2.5rem;
+  padding: 0;
+  width: 2.5rem;
+  margin-right: -0.25rem;
+}
+
+.nav-toggle.is-active {
+  background-image: url(../img/back.svg);
+  background-size: 41.5%;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-toggle {
+    display: none;
+  }
+}

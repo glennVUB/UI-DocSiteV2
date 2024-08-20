@@ -1,0 +1,109 @@
+.article-banner {
+  align-items: center;
+  background-color: var(--info);
+  display: none;
+  line-height: 1.2;
+  padding-top: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 1rem;
+  color: white;
+  font-size: 0.75em;
+  flex-wrap: wrap;
+}
+
+.article-banner.beta {
+  justify-content: space-evenly;
+}
+
+.article-banner .beta-imdg {
+  max-width: 800px;
+  flex: 1 1 50%;
+}
+
+.article-banner .beta-imdg li > a {
+  color: #fff;
+}
+
+.article-banner.prerelease {
+  flex: 1 1;
+  position: sticky;
+  top: 50px;
+  justify-content: flex-start;
+  z-index: 1;
+}
+
+.article-banner .prerelease .fa.fa-info {
+  font-size: 30px;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+.new {
+  border-radius: 10px;
+  border: none;
+  color: #041a3b;
+  background-color: var(--success-light);
+  font-size: 14px;
+  position: absolute;
+  margin-left: 5px;
+}
+
+.new:hover {
+  cursor: default;
+}
+
+.article-banner p {
+  font-size: calc(14 / var(--rem-base) * 1rem);
+  margin: 0 1rem 0 0;
+  margin-bottom: 10px;
+}
+
+.article-banner a.btn {
+  border: 1px solid var(--neutral);
+  text-align: center;
+  padding: 4px;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  background-color: white;
+  width: fit-content;
+  display: flex;
+  flex: 1 1 20%;
+}
+
+.article-banner a.btn:focus,
+.article-banner a.btn:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+main > .content {
+  background-color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .article {
+    flex-grow: 2;
+  }
+
+  .article-banner {
+    justify-content: space-evenly;
+  }
+
+  main {
+    /* min-width: 0 required for flexbox to constrain overflowing elements */
+    min-width: 0;
+  }
+
+  main > .content {
+    display: flex;
+    border-left: 1px solid var(--panel-border-color);
+    border-right: 1px solid var(--panel-border-color);
+  }
+}
+
+@media (min-width: 1600px) {
+  .article-banner .beta-imdg {
+    max-width: 100%;
+  }
+}

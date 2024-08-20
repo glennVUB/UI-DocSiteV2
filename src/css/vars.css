@@ -1,0 +1,162 @@
+:root {
+  /* colors */
+  --neutral-white: #fff;
+  --neutral-lighter: #fafafa;
+  --neutral: #e4e2e2;
+  --neutral-light: #b7c1cb;
+  --secondary-text: #707482;
+  --text: #041a3b;
+  --primary-light: #2d7de4;
+  --primary: #2160c0;
+  --primary-dark: #003b87;
+  --accent: #0080a9;
+  --accent-light: #10a4b3;
+  --accent2: #c91268;
+  --accent2-light: #ffe3e3;
+  --accent3: #f5911e;
+  --accent3-light: #ffe8da;
+  --accent4: #c6ff3a;
+  --accent4-light: #f7ffe4;
+  --accent5: #0019fe;
+  --accent5-light: #e0e8ff;
+  --info-light: #f0f6ff;
+  --info: #4a71c4;
+  --accessibility-outline: #2160c0;
+  --error: #b00020;
+  --warning-light: #f9b721;
+  --warning: #f47027;
+  --warning-dark: #ad6200;
+  --success-light: #68c200;
+  --success: #008a00;
+  --success-dark: #005c09;
+  --color-gray-30: #8e8e8e;
+  --color-gray-50: #808080;
+  --color-gray-70: #5d5d5d;
+  --color-jet-20: #4a4a4a;
+  --color-jet-30: #424242;
+  --color-jet-50: #333;
+  --color-jet-70: #222;
+  --color-jet-80: #191919;
+  --color-black: #000;
+  /* fonts */
+  --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
+  --body-font-size: 1em; /* 16px */
+  --body-font-size--print: 0.9375em; /* 15px */
+  --body-line-height: 1.4;
+  --body-font-color: var(--text);
+  --header-color: #071627;
+  --body-font-family: "Open Sans", sans-serif;
+  --body-font-weight-bold: 600;
+  --nav-font-family: "PP Telegraf", sans-serif;
+  --nav-font-weight: 500;
+  --monospace-font-family: "Roboto Mono", monospace;
+  --heading-font-family: "PP Telegraf", sans-serif;
+  --monospace-font-weight-bold: 500;
+  /* base */
+  --body-background: #f2f5f9;
+  --panel-background: var(--neutral-lighter);
+  --panel-border-color: var(--neutral);
+  --scrollbar-thumb-color: var(--neutral-light);
+  /* navbar */
+  --navbar-background: var(--neutral-white);
+  --navbar-font-color: #24292e;
+  --navbar_hover-background: var(--neutral-lighter);
+  --navbar-button-background: var(--accent-light);
+  --navbar-button-font-color: var(--neutral-white);
+  --navbar-menu-border-color: var(--panel-border-color);
+  --navbar-menu-background: var(--neutral-white);
+  --navbar-menu-font-color: var(--body-font-color);
+  --navbar-menu_hover-background: var(--neutral-lighter);
+  /* nav */
+  --nav-background: var(--panel-background);
+  --nav-border-color: #dadada;
+  --nav-line-height: 1.35;
+  --nav-heading-font-color: var(--color-jet-30);
+  --nav-muted-color: var(--color-gray-70);
+  --nav-panel-divider-color: var(--neutral);
+  --nav-secondary-background: var(--neutral-lighter);
+  /* toolbar */
+  --toolbar-background: var(--panel-background);
+  --toolbar-border-color: var(--panel-border-color);
+  --toolbar-font-color: var(--color-gray-70);
+  --toolbar-muted-color: var(--color-gray-30);
+  --page-version-missing-font-color: var(--color-gray-30);
+  /* toc */
+  --toc-font-color: var(--nav-muted-color);
+  --toc-heading-font-color: var(--doc-font-color);
+  --toc-border-color: var(--panel-border-color);
+  --toc-line-height: 1.2;
+  /* admonitions */
+  --caution-color: var(--warning-light);
+  --caution-on-color: var(--neutral-white);
+  --important-color: var(--error);
+  --important-on-color: var(--neutral-white);
+  --note-color: var(--info);
+  --note-on-color: var(--neutral-white);
+  --tip-color: var(--success-light);
+  --tip-on-color: var(--neutral-white);
+  --warning-color: var(--warning);
+  --warning-on-color: var(--neutral-white);
+  /* doc */
+  --doc-font-color: var(--text);
+  --doc-font-size: inherit;
+  --doc-font-size--desktop: 16px;
+  --doc-line-height: 1.6;
+  --doc-margin: 0 auto;
+  --doc-margin--desktop: 0 2rem;
+  --doc-margin--desktop-large: 0 3rem;
+  --heading-font-color: var(--text);
+  --heading-font-weight: normal;
+  --alt-heading-font-weight: var(--body-font-weight-bold);
+  --section-divider-color: var(--panel-border-color);
+  --link-font-color: var(--primary);
+  --link_hover-font-color: var(--primary);
+  --link_unresolved-font-color: var(--important-color);
+  --abstract-background: var(--neutral-light);
+  --abstract-font-color: var(--secondary-text);
+  --abstract-border-color: var(--panel-border-color);
+  --admonition-background: #e8ecf3;
+  --admonition-label-font-weight: var(--body-font-weight-bold);
+  --caption-font-color: var(--secondary-text);
+  --caption-font-weight: var(--body-font-weight-bold);
+  --code-background: #f1f3f4;
+  --code-font-color: #37474f;
+  --example-background: var(--neutral-white);
+  --example-border-color: var(--color-gray-70);
+  --kbd-background: var(--panel-background);
+  --kbd-border-color: var(--neutral-light);
+  --pre-background: var(--panel-background);
+  --pre-border-color: var(--panel-border-color);
+  --pre-annotation-font-color: var(--neutral-light);
+  --quote-background: var(--panel-background);
+  --quote-border-color: var(--color-gray-70);
+  --quote-font-color: var(--secondary-text);
+  --quote-attribution-font-color: var(--csecondary-text);
+  --sidebar-background: var(--panel-background);
+  --table-border-color: var(--panel-border-color);
+  /* footer */
+  --footer-line-height: var(--doc-line-height);
+  --footer-font-color: #fafafa;
+  /* dimensions and positioning */
+  --navbar-height: 60px;
+  --toolbar-height: calc(45 / var(--rem-base) * 1rem);
+  --drawer-height: var(--toolbar-height);
+  --body-top: var(--navbar-height);
+  --body-min-height: calc(100vh - var(--body-top));
+  --nav-height: var(--body-min-height);
+  --nav-width: calc(270 / var(--rem-base) * 1rem);
+  --toc-top: calc(var(--body-top) + var(--toolbar-height));
+  --toc-content-height: calc(100vh - var(--toc-top) - 2.5rem);
+  --toc-width: 14rem;
+  --toc-height: 400px;
+  --toc-margin-right: 0.75rem;
+  --doc-max-width: calc(720 / var(--rem-base) * 1rem);
+  --doc-max-width--desktop: calc(1500 / var(--rem-base) * 1rem);
+  --border-radius: 5px;
+  --cards-gap: 24px;
+  /* stacking */
+  --z-index-nav: 1;
+  --z-index-toolbar: 2;
+  --z-index-page-version-menu: 3;
+  --z-index-navbar: 10000;
+}

@@ -1,0 +1,43 @@
+.breadcrumbs {
+  display: none;
+  line-height: var(--nav-line-height);
+  color: var(--secondary-text);
+}
+
+@media screen and (min-width: 1024px) {
+  .breadcrumbs {
+    display: block;
+    margin-top: 15px;
+    font-size: smaller;
+  }
+}
+
+a + .breadcrumbs {
+  padding-left: 0.05rem;
+}
+
+.doc .breadcrumbs ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  display: inline;
+  margin: 0;
+}
+
+.breadcrumbs li a {
+  color: var(--secondary-text);
+}
+
+.breadcrumbs li::after {
+  content: ">";
+  padding: 0 0.5rem;
+}
+
+.breadcrumbs li:last-of-type::after {
+  content: none;
+}

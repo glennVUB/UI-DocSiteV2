@@ -1,0 +1,42 @@
+<main class="article">
+{{#if (eq page.layout '404')}}
+  <div class="content">
+{{> article}}
+  </div>
+</main>
+{{else}}
+  {{#if (and (eq page.component.name 'imdg') (eq page.componentVersion page.component.latest) (not @root.page.componentVersion.prerelease ))}}
+    <button onclick="closeBanner()" style="color:white; font-size: 2em; background:none; border:none; align-self: flex-start;">&times;</button>
+    </div>
+    {{/if}}
+  {{#unless (or (not-eq page.attributes.hide-view-latest undefined) (eq page.componentVersion page.component.latest))}}
+  {{#with (latest-page-url)}}
+  <div class="article-banner prerelease" id="latest-banner">
+    {{#if (and @root.page.componentVersion.prerelease (not @root.page.latest.prerelease))}}
+    <div class="prerelease">
+    <p>This is a prerelease version.</p>
+        <a class="btn" href="{{relativize this}}">View latest</a>
+    </div>
+    {{else if (and @root.page.componentVersion.prerelease @root.page.latest.prerelease)}}
+      <div class="prerelease">
+        <p>This is a prerelease version.</p>
+    </div>
+    {{else}}
+    <div class="prerelease"prerelease>
+    <p>A newer version of {{@root.page.component.title}} is available.</p>
+    <a class="btn" href="{{relativize this}}">View latest</a>
+    </div>
+    {{/if}}
+    {{#if (eq @root.page.component.name 'imdg')}}
+    <div class="beta-imdg">
+    {{/if}}
+  </div>
+  {{/with}}
+  {{/unless}}
+  <div class="content">
+{{> article}}
+{{> toc}}
+  </div>
+</main>
+{{/if}}
+

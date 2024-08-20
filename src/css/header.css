@@ -1,0 +1,122 @@
+/* General Reset */
+body {
+  padding-top: var(--navbar-height);
+}
+
+/* Navbar Styling */
+.navbar {
+  background: white;
+  color: var(--navbar-font-color);
+  font-size: calc(27 / var(--rem-base) * 1rem);
+  height: var(--navbar-height);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: var(--z-index-navbar);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  border-bottom: 2px solid #e0e0e0; /* Add this line for the bottom border */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--navbar-menu-font-color);
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left img {
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  color: #039;
+  font-weight: bold;
+}
+
+.navbar-right {
+  margin-left: auto;
+}
+
+.navbar-right > .navbar-item,
+.navbar-right .navbar-link {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #039;
+}
+
+/* Search Input Styling */
+#search-input {
+  color: #333;
+  font-family: inherit;
+  font-size: 0.95rem;
+  width: 200px;
+  border: 1px solid #dbdbdb;
+  border-radius: 0.1em;
+  line-height: 1.5;
+  padding: 0 0.25em;
+}
+
+#search-input:disabled {
+  background-color: #dbdbdb;
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
+#search-input:focus {
+  outline: none;
+}
+
+#search-input:disabled::placeholder {
+  color: #4c4c4c;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1023.5px) {
+  .navbar-left img {
+    height: 40px;
+  }
+
+  #search-input {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-burger {
+    display: none;
+  }
+
+  .navbar-item,
+  .navbar-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-dropdown {
+    background: var(--navbar-menu-background);
+    border: 1px solid var(--navbar-menu-border-color);
+    border-top: none;
+    border-radius: 0 0 0.25rem 0.25rem;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100%;
+  }
+
+  .navbar-item:hover .navbar-dropdown {
+    display: block;
+  }
+
+  .navbar-dropdown .navbar-item {
+    padding: 0.5rem 1rem;
+  }
+}
