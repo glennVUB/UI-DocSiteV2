@@ -29,6 +29,7 @@ body {
 .navbar-right {
   display: flex;
   align-items: center;
+  color: var(--accent);
 }
 
 .navbar-left img {
@@ -52,30 +53,46 @@ body {
   color: #039;
 }
 
-/* Search Input Styling */
+/* Container with rounded corners */
+#big-field {
+  display: flex;
+  align-items: center;
+  width: 250px; /* Adjust width as needed */
+  border-radius: 1.5em; /* Rounded corners */
+  background-color: #fff; /* Background color for the container */
+  border: 1px solid #ccc; /* Border for the container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Search input style */
+#search-field {
+  flex: 1;
+}
+
 #search-input {
   color: #333;
   font-family: inherit;
-  font-size: 0.95rem;
-  width: 200px;
-  border: 1px solid #dbdbdb;
-  border-radius: 0.1em;
-  line-height: 1.5;
-  padding: 0 0.25em;
+  font-size: 1.1rem;
+  width: 100%; /* Take full width of the container */
+  border: none; /* Remove default border */
+  border-radius: 1.5em; /* Rounded corners to match the container */
+  padding: 0.5em 1em; /* Padding inside the input */
+  outline: none; /* Remove outline on focus */
 }
 
-#search-input:disabled {
-  background-color: #dbdbdb;
-  cursor: not-allowed;
-  pointer-events: all !important;
-}
-
+/* Focus state */
 #search-input:focus {
   outline: none;
 }
 
-#search-input:disabled::placeholder {
-  color: #4c4c4c;
+/* Icon style */
+.search-icon {
+  padding: 0.5em;
+  cursor: default; /* No pointer cursor for the icon */
+  color: #007bff; /* Icon color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Media Queries */

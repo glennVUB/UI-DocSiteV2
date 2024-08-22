@@ -1,17 +1,30 @@
-   <header class="navbar">
+<header class="navbar">
   <div class="navbar-left">
     <a href="{{{or site.url siteRootPath}}}" class="navbar-item">
-      <img src="{{{uiRootPath}}}/img/Full_Logo_VUB_2.png" alt="Logo VUB">
+      <img src="{{{uiRootPath}}}/img/Logo_VUB.png" alt="Logo VUB">
+      </a>
+      <p class="navbar-item navbar-app-title">
+        | Documentation
+      </p>
     </a>
   </div>
+
+
+
   
   <div class="navbar-right">
     {{#if env.SITE_SEARCH_PROVIDER}}
       <div class="navbar-item search hide-for-print">
-        <div id="search-field" class="field">
-          <input id="search-input" type="text" placeholder="Search the docs"{{#if page.home}} autofocus{{/if}}>
+        <div id="big-field" class="big-field">
+          <div id="search-field" class="field search-field">
+            <input id="search-input" type="text" placeholder="Search the docs" {{#if page.home}}autofocus{{/if}}>
+          </div>
+          <div class="search-icon">
+            <img src="{{{uiRootPath}}}/img/magnifier.svg">
+          </div>
         </div>
       </div>
     {{/if}}
+  </div>
 </header>
 
