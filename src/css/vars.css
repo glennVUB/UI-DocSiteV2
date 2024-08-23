@@ -8,10 +8,11 @@
   --text: #041a3b;
   --primary-light: #2d7de4;
   --primary: #039;
+  --primary-2: #f66;
   --accent: #039;
   --accent-light: #10a4b3;
   --accent2: #e7bd00;
-  --accent2-light: #f8e099; 
+  --accent2-light: #f8e099;
   --accent3: #f5911e;
   --accent3-light: #ffe8da;
   --accent4: #c6ff3a;
@@ -21,7 +22,7 @@
   --info-light: #f0f6ff;
   --info: #4a71c4;
   --accessibility-outline: #2160c0;
-  --error: #CC0000;
+  --error: #c00;
   --error-light: #f89d9d;
   --warning-light: #f9b721;
   --warning: #f7864a;

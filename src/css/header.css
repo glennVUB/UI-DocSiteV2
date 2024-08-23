@@ -53,12 +53,12 @@ body {
   color: #039;
 }
 
-/* Container with rounded corners */
+/* Container with square corners */
 #big-field {
   display: flex;
   align-items: center;
   width: 250px; /* Adjust width as needed */
-  border-radius: 1.5em; /* Rounded corners */
+  border-radius: 0; /* Square corners */
   background-color: #fff; /* Background color for the container */
   border: 1px solid #ccc; /* Border for the container */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -75,7 +75,7 @@ body {
   font-size: 1.1rem;
   width: 100%; /* Take full width of the container */
   border: none; /* Remove default border */
-  border-radius: 1.5em; /* Rounded corners to match the container */
+  border-radius: 0; /* Square corners to match the container */
   padding: 0.5em 1em; /* Padding inside the input */
   outline: none; /* Remove outline on focus */
 }

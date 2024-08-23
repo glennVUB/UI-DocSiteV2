@@ -31,13 +31,13 @@
   outline-style: initial;
   border-radius: 40px;
   cursor: pointer;
-  border: 0.5px solid #dadada;
-  background-color: #fafafa;
+  border: 0.5px solid var(--primary-dark);
+  background-color: var(--primary-light);
 }
 
 #hide-nav button:hover {
   border: 0.5px solid #fafafa;
-  background-color: #dadada;
+  background-color: var(--primary-2);
 }
 
 .nav-container.is-active {
