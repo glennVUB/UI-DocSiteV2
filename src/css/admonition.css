@@ -55,8 +55,8 @@
 }
 
 .admonitionblock.important {
-  background-color: var(--accent5-light);
-  border-left-color: var(--accent5);
+  background-color: var(--error-light);
+  border-left-color: var(--error);
 }
 
 .admonitionblock.important::before {
@@ -64,8 +64,8 @@
 }
 
 .admonitionblock.caution {
-  background-color: var(--accent3-light);
-  border-left-color: var(--accent3);
+  background-color: var(--accent2-light);
+  border-left-color: var(--accent2);
 }
 
 .admonitionblock.caution::before {
@@ -73,8 +73,8 @@
 }
 
 .admonitionblock.warning {
-  background-color: var(--accent2-light);
-  border-left-color: var(--accent2);
+  background-color: var(--accent3-light);
+  border-left-color: var(--accent3);
 }
 
 .admonitionblock.warning::before {
