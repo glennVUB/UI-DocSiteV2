@@ -29,6 +29,24 @@
   width: calc(100% + 1.5rem);
 }
 
+/* "edit this page" link, aligned with the breadcrumbs row */
+.doc .edit-this-page {
+  color: var(--caption-font-color);
+  float: right;
+  font-size: calc(13 / var(--rem-base) * 1rem);
+  text-decoration: none;
+}
+
+.doc .edit-this-page::before {
+  content: "\270E";
+  margin-right: 0.3em;
+}
+
+.doc .edit-this-page:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
 /* last-updated note at the bottom of each article */
 .doc .last-updated {
   color: var(--caption-font-color);

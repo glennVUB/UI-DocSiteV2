@@ -16,6 +16,9 @@
   {{> page-versions}}
 {{else}}
   {{> breadcrumbs}}
+  {{#if page.editUrl}}
+    <a class="edit-this-page" href="{{page.editUrl}}" target="_blank" rel="noopener" title="Bewerk deze pagina in de repository">Edit</a>
+  {{/if}}
   {{#if (not-eq page.layout 'tutorial')}}
     {{>nav-toggle}}
   {{/if}}
