@@ -16,7 +16,9 @@
 .hljs-literal,
 .hljs-variable,
 .hljs-template-variable,
-.hljs-tag .hljs-attr {
+.hljs-tag .hljs-attr,
+.hljs-attr,
+.hljs-property {
   color: #008080;
 }
 
@@ -26,6 +28,8 @@
 }
 
 .hljs-title,
+.hljs-title.class_,
+.hljs-title.function_,
 .hljs-section,
 .hljs-selector-id {
   color: #900;
@@ -59,8 +63,7 @@
   color: #990073;
 }
 
-.hljs-built_in,
-.hljs-builtin-name {
+.hljs-built_in {
   color: #0086b3;
 }
 

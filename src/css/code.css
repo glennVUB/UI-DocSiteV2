@@ -1,0 +1,38 @@
+/* filename tab above source blocks (Asciidoctor block title) */
+.doc .listingblock > .title {
+  background: var(--code-background);
+  border-radius: 3px 3px 0 0;
+  box-shadow: inset 0 0 1.75px var(--pre-border-color);
+  color: var(--code-font-color);
+  display: inline-block;
+  font-family: var(--monospace-font-family);
+  font-size: calc(13.5 / var(--rem-base) * 1rem);
+  font-weight: var(--monospace-font-weight-bold);
+  letter-spacing: 0;
+  margin-bottom: 0;
+  padding: 0.25rem 0.75rem 0.2rem;
+}
+
+.doc .listingblock > .title + .content pre.highlight code,
+.doc .listingblock > .title + .content pre:not(.highlight) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* highlighted lines (data-highlight-lines, wrapped by vendor/highlight.js) */
+.doc pre.highlight code .hljs-line-hl {
+  background: var(--code-hl-line-background);
+  box-shadow: inset 2px 0 0 var(--primary);
+  display: inline-block;
+  margin: 0 -0.75rem;
+  padding: 0 0.75rem;
+  width: calc(100% + 1.5rem);
+}
+
+/* last-updated note at the bottom of each article */
+.doc .last-updated {
+  color: var(--caption-font-color);
+  font-size: calc(14 / var(--rem-base) * 1rem);
+  font-style: italic;
+  margin-top: 2.5rem;
+}

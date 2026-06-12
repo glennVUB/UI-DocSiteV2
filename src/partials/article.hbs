@@ -37,6 +37,9 @@
   {{/if}}
   {{> page-versions}}
   {{{page.contents}}}
+  {{#if page.attributes.last-updated}}
+    <p class="last-updated">Laatst bijgewerkt op <time datetime="{{page.attributes.last-updated-iso}}">{{page.attributes.last-updated}}</time></p>
+  {{/if}}
   {{#if page.attributes.include-tutorial-list}}
     <ul style="padding-top:20px;">
     {{#each (get-tutorial-pages 'cloud')}}

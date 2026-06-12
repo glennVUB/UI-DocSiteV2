@@ -6,6 +6,8 @@ Author Name
 :!table-caption:
 //:page-role: -toc
 :page-pagination:
+:page-last-updated: 9 juni 2026
+:page-last-updated-iso: 2026-06-09
 
 [.float-group]
 --
@@ -81,6 +83,30 @@ Voila!
 === Some Code
 
 How about some code?
+
+.interfaces.yml
+[,yaml]
+----
+interfaces:
+  - name: eth0
+    address: 10.0.0.1/24
+    vlan: 10
+----
+
+++++
+<div class="listingblock">
+<div class="title">playbook.yml</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml" data-highlight-lines="2..3">- hosts: switches
+  tasks:
+    - name: configure vlan
+      ios_vlan:
+        vlan_id: 10
+        name: data
+</code></pre>
+</div>
+</div>
+++++
 
 [,js]
 ----
