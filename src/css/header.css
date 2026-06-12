@@ -57,7 +57,7 @@ body {
 #big-field {
   display: flex;
   align-items: center;
-  width: 250px; /* Adjust width as needed */
+  width: 125px; /* Adjust width as needed */
   border-radius: 0; /* Square corners */
   background-color: #fff; /* Background color for the container */
   border: 1px solid #ccc; /* Border for the container */
@@ -87,12 +87,17 @@ body {
 
 /* Icon style */
 .search-icon {
-  padding: 0.5em;
+  padding: 0.18em;
   cursor: default; /* No pointer cursor for the icon */
   color: #007bff; /* Icon color */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.search-icon img {
+  width: 1em;
+  height: 1em;
 }
 
 /* Media Queries */
