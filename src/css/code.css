@@ -19,8 +19,8 @@
   border-top-right-radius: 0;
 }
 
-/* highlighted lines (data-highlight-lines, wrapped by vendor/highlight.js) */
-.doc pre.highlight code .hljs-line-hl {
+/* highlighted lines (data-highlight-lines, wrapped by vendor/prism.js) */
+.doc pre.highlight code .hl-line {
   background: var(--code-hl-line-background);
   box-shadow: inset 2px 0 0 var(--primary);
   display: inline-block;
